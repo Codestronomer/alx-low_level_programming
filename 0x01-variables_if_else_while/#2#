@@ -1,0 +1,6 @@
+
+Here's one in awk:
+
+$ curl ... | awk '/<loc>/{gsub(/<\/?loc>|[[:space:]]/,"");print}'
+
+41;320;0c
