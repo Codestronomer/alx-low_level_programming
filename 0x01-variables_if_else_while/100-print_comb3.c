@@ -16,7 +16,6 @@ for (e = d + 1; e < 10; e++)
 {
 putchar((d % 10) + '0');
 putchar((e % 10) + '0');
-}
 if (d == 8 && e == 9)
 {
 continue;
