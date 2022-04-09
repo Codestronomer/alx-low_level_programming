@@ -8,24 +8,24 @@
  */
 int main(void)
 {
-int d, e, f;
+int d, e;
 
-for (d = 0; d < 8; d++)
+for (d = 0; d < 98; d++)
 {
-for (e = d + 1; e < 9; e++)
+for (e = d + 1; e < 99; e++)
 {
-for (f = e + 1; f < 10; f++)
-{
+putchar((d / 10) + '0');
 putchar((d % 10) + '0');
+putchar(' ');
+putchar((e / 10) + '0');
 putchar((e % 10) + '0');
-putchar((f % 10) + '0');
-if (d == 7 && e == 8 && f == 9)
+
+if (d == 98 && e == 99)
 {
 continue;
 }
 putchar(',');
 putchar(' ');
-}
 }
 }
 putchar('\n');
