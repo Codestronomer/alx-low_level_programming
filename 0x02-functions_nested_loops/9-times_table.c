@@ -12,7 +12,7 @@ int i, j, num;
 for (i = 0; i <= 9; i++)
 {
 _putchar(48);
-for (int j = 0; j <= 9; j++)
+for (j = 0; j <= 9; j++)
 {
 num = i * j;
 _putchar(44);
