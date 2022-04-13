@@ -14,8 +14,9 @@ for (a = 97; a <= z; a++)
 {
 _putchar(a);
 }
-}
 _putchar('\n');
+}
+
 return;
 }
 
