@@ -14,11 +14,9 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 num = i * j;
-_putchar(44);
-_putchar(32);
+
 if (num <= 9)
 {
-_putchar(32);
 _putchar(num + 48);
 }
 else
@@ -26,6 +24,8 @@ else
 _putchar((num / 10) + 48);
 _putchar((num % 10) + 48);
 }
+_putchar(44);
+_putchar(32);
 }
 _putchar('\n');
 }
