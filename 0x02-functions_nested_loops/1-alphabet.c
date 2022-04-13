@@ -15,7 +15,7 @@ return (0);
 void print_alphabet(void)
 {
 int a, z = 122;
-for(a=97; a<=122; a++)
+for(a=97; a<=z; a++)
 {
 _putchar(a);
 }
