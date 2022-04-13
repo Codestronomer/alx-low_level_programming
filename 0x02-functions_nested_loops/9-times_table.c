@@ -18,15 +18,17 @@ num = i * j;
 if (num <= 9)
 {
 _putchar(num + 48);
+_putchar(44);
+_putchar(32);
 _putchar(32);
 }
 else
 {
 _putchar((num / 10) + 48);
 _putchar((num % 10) + 48);
-}
 _putchar(44);
 _putchar(32);
+}
 }
 _putchar('\n');
 }
