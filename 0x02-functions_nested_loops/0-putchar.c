@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 
-/*
+/**
  * main - Prints _putchar as a message
  *
  * Return: Always 0 (Success)
