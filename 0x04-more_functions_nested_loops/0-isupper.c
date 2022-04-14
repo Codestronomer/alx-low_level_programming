@@ -4,8 +4,8 @@
 
 /**
  * _isupper - checks for uppercase character
- * @n : parameter to be checked
- * Return : return 1 if uppercase, 0 if otherwise
+ * @c : parameter to be checked
+ * Return: return 1 if uppercase, 0 if otherwise
  */
 
 int _isupper(int c)
@@ -18,4 +18,4 @@ else
 {
 return (0);
 }
-
+}
