@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * most_numbers - prints 10 times the numbers, from 0 to 14
+ * more_numbers - prints 10 times the numbers, from 0 to 14
  *
  * Return: Always (0)
 */
@@ -16,7 +16,6 @@ for (j = 48; j < 65; j++)
 {
 _putchar(j);
 }
-_putchar('\n');
 }
 _putchar('\n');
 }
