@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_diagoal - draws a diagonal line
+ * print_diagonal - draws a diagonal line
  * @n - number of times to print the \ chararacter
  * Return: Always (0)
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 int i, j;
 
