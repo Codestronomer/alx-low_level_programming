@@ -6,7 +6,7 @@
  * @str: input string.
  * Return: no Return.
  */
-int puts_half(char *str)
+void puts_half(char *str)
 {
 	int i = 0; j
 
