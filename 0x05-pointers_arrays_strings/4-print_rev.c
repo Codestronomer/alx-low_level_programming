@@ -4,21 +4,21 @@
 
 /**
  * print_rev - print a string, in reverse, followed by a new line.
- * @str: input string.
+ * @s: input string.
  * Return: no Return.
  */
-void print_rev(char *str)
+void print_rev(char *s)
 {
-	int i = strlen(*str);
+	int count = 0;
 
-	while (i >= 0)
+	while (count >= 0)
 	{
-		if (str[i] == '\0')
-		{
-			_putchar('\n');
+		if (s[count] == '\0')
 			break;
-		}
-		_putchar(str[i]);
-		i--;
+		count++;
 	}
+
+	for (count--; count >= 0; count--)
+		_putchar(s[count]);
+	_putchar('\n');
 }

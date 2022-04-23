@@ -6,22 +6,23 @@
  * @str: input string.
  * Return: no Return.
  */
-int puts_half(char *str)
+void puts_half(char *str)
 {
-	int i = 0; j
+	int count = 0, i;
 
-	while (i >= 0)
+	while (count >= 0)
 	{
-		if (str[i] == '\0')
-		{
+		if (str[count] == '\0')
 			break;
-		}
-		if (i % 2 == 1)
-			j = i / 2;
-		else
-			j = (i - 1) / 2;
-		for (j++; j < i; j++)
-			_putchar(str[j]);
-		_putchar('\n');
+		count++;
 	}
+
+	if (count % 2 == 1)
+		i = count / 2;
+	else
+		i = (count - 1) / 2;
+
+	for (i++; i < count; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
