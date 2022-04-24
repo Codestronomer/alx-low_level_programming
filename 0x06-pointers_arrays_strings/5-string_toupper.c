@@ -9,16 +9,16 @@
 
 char *string_toupper(char *s)
 {
-        int i;
-        int s_len = strlen(s);
+int i;
+int s_len = strlen(s);
 
-        for (i = 0; i < s_len; i++)
-        {
-                if (s[i] > 96 && s[i] < 123)
-                {
-                        s[i] = *(s + i) - 32;
-                }
-        }
+for (i = 0; i < s_len; i++)
+{
+if (s[i] > 96 && s[i] < 123)
+{
+s[i] = *(s + i) - 32;
+}
+}
 
-        return (s);
+return (s);
 }
