@@ -2,7 +2,7 @@
 
 /**
  * main - prints 98
- * 
+ *
  * Return: Alwwys (0)
 */
 
