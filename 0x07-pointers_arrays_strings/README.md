@@ -1,0 +1,5 @@
+# ALX SOFTWARE ENGINEERING PROGRAMME
+## ALX LOW-LEVEL-PROGRAMMING
+
+0X07-pointers_arrays_strings tasks
+
