@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <strlen>
+#include <string.h>
 
 /**
  * _strdup - Returns a pointer to a newly allocated
