@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <strlen>
 
 /**
  * _strdup - Returns a pointer to a newly allocated
@@ -12,7 +13,7 @@
 
 char *_strdup(char *str)
 {
-	int *s;
+	char *s;
 	int i;
 	int len = strlen(str);
 
