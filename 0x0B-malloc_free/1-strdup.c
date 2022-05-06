@@ -13,18 +13,21 @@
 
 char *_strdup(char *str)
 {
-	char *s;
-	int i;
+	char *stro;
+	unsigned int i;
 	int len = strlen(str);
 
 	if (str == NULL)
 		return (NULL);
-	s = (char *)malloc(sizeof(char) * len);
-	if (s == NULL)
+
+	stro = (char *)malloc(sizeof(char) * len);
+
+	if (stro == NULL)
 		return (NULL);
+
 	for (i = 0; i < len; i++)
 	{
-		*(s + i) = str[i];
+		*(stro + i) = str[i];
 	}
-	return (s);
+	return (stro);
 }
