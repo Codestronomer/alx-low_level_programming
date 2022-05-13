@@ -6,47 +6,49 @@
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
- * Return: Null on failure, return dog on success
+ *
+ * Return: struct dog.
+ * if fails, returns NULL.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *ptr;
-	int i, sname, sowner;
+	dog_t *p_dog;
+	int i, lname, lowner;
 
-	ptr = malloc(sizeof(*ptr));
-	if (ptr == NULL)
+	p_dog = malloc(sizeof(*p_dog));
+	if (p_dog == NULL || !(name) || !(owner))
 	{
-		free(ptr);
+		free(p_dog);
 		return (NULL);
 	}
-	if (!(name) || !(owner))
-		return (NULL);
-	for (sname = 0; name[sname] != '\0'; sname++)
+
+	for (lname = 0; name[lname]; lname++)
 		;
-	for (sowner = 0; owner[sowner] != '\0'; sowner++)
+
+	for (lowner = 0; owner[lowner]; lowner++)
 		;
-	ptr->name = malloc(sizeof(char) * (sname + 1));
-	if (!ptr->name)
+
+	p_dog->name = malloc(lname + 1);
+	p_dog->owner = malloc(lowner + 1);
+
+	if (!(p_dog->name) || !(p_dog->owner))
 	{
-		free(ptr);
+		free(p_dog->owner);
+		free(p_dog->name);
+		free(p_dog);
 		return (NULL);
 	}
-	ptr->owner = malloc(sizeof(char) * (sname + 1));
-	if (!ptr->owner)
-	{
-		free(ptr);
-		return (NULL);
-	}
-	for (i = 0; i < sname; i++)
-		ptr->name[i] = name[i];
-	ptr->name[i] = '\0';
 
-	ptr->age = age;
+	for (i = 0; i < lname; i++)
+		p_dog->name[i] = name[i];
+	p_dog->name[i] = '\0';
 
-	for (i = 0; i < sowner; i++)
-		ptr->owner[i] = owner[i];
-	ptr->owner[i] = '\0';
+	p_dog->age = age;
 
-	return (ptr);
+	for (i = 0; i < lowner; i++)
+		p_dog->owner[i] = owner[i];
+	p_dog->owner[i] = '\0';
+
+	return (p_dog);
 }
