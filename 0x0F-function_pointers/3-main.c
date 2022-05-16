@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	k = argv[2];
+	k = *argv[2];
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	func = get_op_func(k);
+	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
