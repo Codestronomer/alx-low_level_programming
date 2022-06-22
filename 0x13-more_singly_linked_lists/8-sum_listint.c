@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * sum_listint = retusn the sum of the data of
+ * sum_listint - retusn the sum of the data of
  * of a listint_t linked list
  * @head: a head node of a listint_t linked list
  *
