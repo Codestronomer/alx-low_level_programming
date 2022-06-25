@@ -13,20 +13,10 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i = 0;
-	char *bin;
 
-	bin = malloc(sizeof(char) * INT_MAX);
-	if (bin == NULL)
-	{
-		free(bin);
+	if (index > 63)
 		return (-1);
-	}
-
-	while (n >> 0)
-	{
-		if (n >> 1)
-			bin[i] = (n & 1) + '0';
-		n = n >> 1;
-	}
-	return (bin[index]);
+	
+	i = (n >> index) & 1;
+	return (i);
 }
