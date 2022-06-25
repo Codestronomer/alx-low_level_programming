@@ -11,13 +11,14 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int flips, n_xor_m;
+	unsigned int flips = 0;
+	unsigned long int n_xor_m;
 
 	n_xor_m = n ^ m;
-	while (n_xor_m > 0)
+	while (n_xor_m)
 	{
-		flips++;
 		n_xor_m &= (n_xor_m - 1);
+		flips++;
 	}
 	return (flips);
 }
