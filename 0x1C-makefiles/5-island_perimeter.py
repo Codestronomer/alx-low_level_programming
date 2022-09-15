@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# 5-island_perimeter.py
+#!/usr/bin/python3
 """ Defines the island_perimeter function """
 
 
